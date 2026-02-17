@@ -1,0 +1,89 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CORPO */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fc;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+/* CABEÇALHO */
+header {
+    background: linear-gradient(135deg, #d63384, #b5179e);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+/* SEÇÕES */
+section {
+    padding: 70px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+h2::after {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background-color: #d63384;
+    display: block;
+    margin-top: 8px;
+}
+
+/* CARDS */
+.card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    transition: 0.3s;
+    border-left: 5px solid #d63384;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+}
+
+/* CONTATO */
+#contato a {
+    color: #d63384;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#contato a:hover {
+    text-decoration: underline;
+}
