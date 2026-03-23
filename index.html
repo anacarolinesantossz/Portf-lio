@@ -1,98 +1,155 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>Meu Portfólio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ana Caroline Santos — Desenvolvedora Back-end & Dados</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="script.css">
 </head>
 <body>
 
-    <header>
-        <h1>Ana Caroline da Silva Santos</h1>
-        <nav>
-            <a href="#sobre">Sobre</a>
-            <a href="#projetos">Projetos</a>
-            <a href="#contato">Contato</a>
-        </nav>
-    </header>
+  <!-- ===== HEADER ===== -->
+  <header>
+    <h1>Ana Caroline Santos</h1>
+    <nav id="nav-menu">
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
 
-   <section class="sobre">
+  <!-- Toast notification -->
+  <div class="toast" id="toast"></div>
+
+  <!-- ===== HERO / SOBRE ===== -->
+  <section class="sobre" id="sobre">
     <div class="container-sobre">
-        <img src="foto.jpg" alt="Foto de Ana Caroline" class="foto-perfil">
 
-        <div class="texto-sobre">
-            <h1>Ana Caroline da Silva Santos</h1>
-            <h2>Estudante de ADS</h2>
-            <p>
-        </p>
+      <img src="foto.jpg" alt="Foto de Ana Caroline" class="foto-perfil">
+
+      <div class="texto-sobre">
+        <span class="eyebrow">🎓 Estudante de ADS</span>
+        <h1>Ana Caroline<br>da Silva Santos</h1>
+        <h2>Back-end & <span>Dados</span></h2>
 
         <p>
-            Sou estudante de Análise e Desenvolvimento de Sistemas, apaixonada por tecnologia e em constante aprendizado. Atualmente estou 
-            aprendendo e desenvolvendo projetos utilizando:
+          Estudante de Análise e Desenvolvimento de Sistemas, apaixonada por tecnologia,
+          lógica e pelo poder dos dados para transformar ideias em soluções reais.
+        </p>
+        <p>
+          Atualmente me aprofundando em desenvolvimento back-end e análise de dados, com foco em:
         </p>
 
         <ul>
-            <li>C# — desenvolvimento orientado a objetos</li>
-            <li>Python — lógica e automação</li>
-            <li>JavaScript — interatividade para aplicações web</li>
+          <li>⚙️ C# — orientação a objetos</li>
+          <li>🐍 Python — lógica e automação</li>
+          <li>🌐 JavaScript — aplicações web</li>
+          <li>🗄️ SQL — banco de dados</li>
         </ul>
 
-        <p>
-            Estou em constante aprendizado, focada em crescer como desenvolvedora
-            e transformar ideias em projetos reais.
-        </p>
-    </section>
-
-    <section id="projetos">
-        <h2>Meus Projetos</h2>
-
-        <div class="card">
-            <h3>Happy Idosos — Toque que Transforma</h3>
-            <p>
-                Projeto iniciado em 2023 no ensino médio integrado ao técnico em Recursos Humanos
-                na ETEC Professora Maria Cristina Medeiros. O objetivo foi promover o bem-estar
-                e a inclusão social de idosos, com atividades presenciais, oficinas e interação com
-                a comunidade.
-            </p>
-            <p>
-                Em 2025 esse projeto evoluiu para um Trabalho de Conclusão de Curso (TCC),
-                com o desenvolvimento de uma <strong>plataforma digital</strong> que conecta
-                voluntários a instituições que atendem idosos, facilitando o acesso ao
-                voluntariado e fortalecendo a convivência entre gerações.
-            </p>
-            <p><strong>Tecnologias:</strong> HTML, CSS</p>
-            <p><strong>Curso:</strong> Recursos Humanos integrado ao Médio — ETEC Professora Maria Cristina Medeiros</p>
+        <div class="hero-cta">
+          <a href="#projetos" class="btn-primary" id="btn-projetos">Ver projetos →</a>
+          <a href="#contato" class="btn-outline">Entre em contato</a>
         </div>
+      </div>
 
-    </section>
+    </div>
+  </section>
 
-    <section id="contato">
-        <h2>Contato</h2>
-      
+  <!-- ===== PROJETOS ===== -->
+  <section id="projetos">
+    <div class="section-label">Projetos</div>
+    <h2>O que eu construí</h2>
+    <p class="section-desc">
+      Projetos desenvolvidos ao longo da minha formação, unindo tecnologia e impacto social.
+    </p>
+
+    <div class="cards-grid">
+
+      <div class="card" data-reveal>
+        <div class="card-icon">💛</div>
+        <h3>Happy Idosos — Toque que Transforma</h3>
         <p>
-            Email:
-            <a href="mailto:anacarolinesantos.contato@gmail.com">
-                anacarolinesantos.contato@gmail.com
-            </a>
+          Iniciado em 2023 no Ensino Médio integrado ao Técnico em RH na ETEC Professora
+          Maria Cristina Medeiros. Promoveu o bem-estar e a inclusão social de idosos por
+          meio de atividades presenciais e oficinas comunitárias.
         </p>
-
         <p>
-            LinkedIn:
-            <a href="https://www.linkedin.com/in/ana-caroline-da-silva-santos-09209a280" target="_blank">
-                Ana Caroline da Silva Santos
-            </a>
+          Em 2025, evoluiu para o TCC com o desenvolvimento de uma <strong style="color: var(--text);">plataforma digital</strong>
+          que conecta voluntários a instituições de idosos, facilitando o acesso ao voluntariado
+          e fortalecendo a convivência intergeracional.
         </p>
+        <div class="card-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag neutral">TCC</span>
+          <span class="tag neutral">ETEC</span>
+        </div>
+        <a href="https://www.happyidosos.com.br/" target="_blank" class="card-link">
+          Acessar projeto →
+        </a>
+      </div>
 
-        <p>
-            GitHub:
-            <a href="https://github.com/anacarolinesantossz" target="_blank">
-                github.com/anacarolinesantossz
-            </a>
-        </p>
-    </section>
+      <!-- Espaço para próximos projetos -->
+      <div class="card" data-reveal style="border-style: dashed; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 240px; text-align: center; opacity: 0.5;">
+        <div style="font-size: 28px; margin-bottom: 12px;">＋</div>
+        <p style="font-size: 14px; color: var(--muted);">Novo projeto em breve...</p>
+      </div>
 
+    </div>
+  </section>
+
+  <!-- ===== CONTATO ===== -->
+  <section id="contato">
+    <div class="section-label">Contato</div>
+    <h2>Vamos conversar?</h2>
+    <p class="section-desc">
+      Estou aberta a oportunidades, colaborações e novas conexões na área de tecnologia.
+    </p>
+
+    <div class="contact-grid">
+
+      <div class="contact-card-wrapper" data-reveal>
+        <a href="mailto:anacarolinesantos.contato@gmail.com" class="contact-card">
+          <div class="contact-icon">✉️</div>
+          <div class="contact-info">
+            <strong>E-mail</strong>
+            <span>anacarolinesantos.contato@gmail.com</span>
+          </div>
+        </a>
+        <button class="btn-copy" data-copy="anacarolinesantos.contato@gmail.com" title="Copiar e-mail">
+          📋
+        </button>
+      </div>
+
+      <a href="https://www.linkedin.com/in/ana-caroline-da-silva-santos-09209a280" target="_blank" class="contact-card" data-reveal>
+        <div class="contact-icon">💼</div>
+        <div class="contact-info">
+          <strong>LinkedIn</strong>
+          <span>Ana Caroline da Silva Santos</span>
+        </div>
+      </a>
+
+      <a href="https://github.com/anacarolinesantossz" target="_blank" class="contact-card" data-reveal>
+        <div class="contact-icon">🐙</div>
+        <div class="contact-info">
+          <strong>GitHub</strong>
+          <span>anacarolinesantossz</span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>Feito com <span>♥</span> por Ana Caroline Santos &mdash; 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
-
-
