@@ -6,7 +6,7 @@
   <title>Ana Caroline Santos — Back-end & Dados</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=Fraunces:opsz,wght@9..144,700;9..144,800;9..144,900&display=swap" rel="stylesheet">
   <style>
     /* =============================================
        TOKENS
@@ -25,6 +25,7 @@
       --radius:    14px;
       --fh:        'Syne', sans-serif;
       --fb:        'DM Sans', sans-serif;
+      --ft:        'Fraunces', serif;
       --ease:      0.3s cubic-bezier(.4,0,.2,1);
     }
 
@@ -181,12 +182,13 @@
     }
 
     .hero-text h1 {
-      font-family: var(--fh);
+      font-family: var(--ft);
       font-size: clamp(36px, 5vw, 60px);
       font-weight: 800;
+      font-style: normal;
       color: var(--heading);
       line-height: 1.08;
-      letter-spacing: -.025em;
+      letter-spacing: -.01em;
       margin-bottom: 12px;
     }
 
@@ -288,11 +290,12 @@
     }
 
     .section-title {
-      font-family: var(--fh);
+      font-family: var(--ft);
       font-size: clamp(28px, 4vw, 42px);
       font-weight: 800;
+      font-style: normal;
       color: var(--heading);
-      letter-spacing: -.02em;
+      letter-spacing: -.01em;
       line-height: 1.12;
       margin-bottom: 10px;
     }
@@ -714,7 +717,7 @@
 
   <!-- ===== FOOTER ===== -->
   <footer>
-    <p> © Ana Caroline Santos &mdash; 2026</p>
+    <p> © 2026 Ana Caroline Santos. Todos os direitos reservados. </p>
   </footer>
 
   <script>
